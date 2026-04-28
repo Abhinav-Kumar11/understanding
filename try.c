@@ -12,6 +12,15 @@ int isFull() {
 int isEmpty() {
     return top == -1;
 }
+// Push operation
+void push(int x) {
+    if (isFull()) {
+        printf("Stack Overflow\n");
+    } else {
+        stack[++top] = x;
+        printf("%d pushed into stack\n", x);
+    }
+}
 
 int main() {
     push(10);
