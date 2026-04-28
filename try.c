@@ -22,6 +22,20 @@ void pop() {
     }
 }
 
+// Display stack
+void display() {
+    if (isEmpty()) {
+        printf("Stack is Empty\n");
+        return;
+    }
+    printf("Stack elements: ");
+    for (int i = top; i >= 0; i--) {
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+}
+
+
 int main() {
     push(10);
     push(20);
