@@ -1,4 +1,18 @@
 #include <stdio.h>
+#define MAX 100
+int stack[MAX];
+int top = -1;
+
+// Check if stack is full
+int isFull() {
+    return top == MAX - 1;
+}
+
+// Check if stack is empty
+int isEmpty() {
+    return top == -1;
+}
+
 int main() {
     push(10);
     push(20);
