@@ -12,6 +12,14 @@ int isFull() {
 int isEmpty() {
     return top == -1;
 }
+// Peek operation
+int peek() {
+    if (isEmpty()) {
+        printf("Stack is Empty\n");
+        return -1;
+    }
+    return stack[top];
+}
 
 int main() {
     push(10);
