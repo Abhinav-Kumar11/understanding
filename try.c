@@ -13,6 +13,15 @@ int isEmpty() {
     return top == -1;
 }
 
+// Pop operation
+void pop() {
+    if (isEmpty()) {
+        printf("Stack Underflow\n");
+    } else {
+        printf("%d popped from stack\n", stack[top--]);
+    }
+}
+
 // Display stack
 void display() {
     if (isEmpty()) {
